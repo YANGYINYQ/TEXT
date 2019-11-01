@@ -1,0 +1,56 @@
+<DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <script type="text/javascript">
+                function copyText() {      
+                    var text = document.getElementById("text").innerText;  
+                    var input = document.getElementById("input");
+                    input.value = text; // 修改文本框的内容
+                    input.select(); // 选中文本
+                    document.execCommand("copy"); // 执行浏览器复制命令
+                    alert("复制成功");
+                    }  
+            </script>
+            <style type="text/css">
+            	html{
+						font-size: 62.5%;
+					}
+                body{
+						font-size: 1.2rem;
+						margin:0;
+						background-color: #F7F7F7;
+					}
+                    h2{
+                    margin-top:10rem;
+                }
+
+            .isd{
+                font-size:2rem;
+            }
+            .ied{
+                            font-size:2rem;
+						    width:18%;
+						    padding: 1rem;
+                            color:#ffff;
+						    background-color:#fff;
+						    border-bottom: 1px #f5f9fa solid;
+                            background: orange;
+                            font-weight: normal;
+                            border-radius: 9px;
+            }
+            </style>
+</head>
+<body>
+    <h2><center>点击“点我复制”复制微信号到微信搜索加好友</center></h2>
+        <div class="wrapper">
+            <center>
+                <p id="text" class="isd">13827278115</p>
+                <textarea id="input">点击复制到微信搜索</textarea></br>
+                <button onclick="copyText()" class="ied" >点我复制</button>
+                </center>
+             </div>
+            
+</body>
+</html>
